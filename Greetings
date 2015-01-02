@@ -1,0 +1,56 @@
+
+
+/**
+ *
+ * @author srinivasDhotre2015 
+ */
+ 
+import java.util.Scanner;
+import java.lang.Thread.*;
+ class FabulousMessage {
+     public int i=600;
+     public int j=900;
+    FabulousMessage(){
+        Scanner scan = new Scanner(System.in);
+        Scanner scan2 = new Scanner(System.in); 
+        System.out.print("\t\t\t\they boss, may i knw your name? :");
+        String name = scan.nextLine();
+        System.out.println("\n\n\t\t\t\twelcome\t"+name+"\t");
+        System.out.print("\n\n\t\t\t\t type Enter from your keybord mr."+name+":");
+        String type =  scan2.nextLine();
+        if(type.equals("Enter")||type.equals("enter")||type.equals("ENTER")){
+            System.out.println("\n\n\t\t\t\ts oh yeah!");
+            System.out.println("\n\n\t\tsmessage from srinivasDhotre:");
+           try{
+               System.out.println("\t\thappy");
+               Thread.sleep(i);
+               System.out.println("\t\tnew");
+               Thread.sleep(i);
+               System.out.println("\t\tyear");
+               Thread.sleep(i);
+               System.out.println("\t\t2015");
+               Thread.sleep(j);
+                System.out.println("\t\t\tsee you on 5th of january...! do simple but not simpler ;-)");
+               Thread.sleep(j);
+               
+           }
+           catch (Exception ex) {
+                System.out.println(ex);
+            }
+            
+        }
+        else{
+            System.out.println("\n\n\t\t\t\tHey,\t"+name+"please type E.N.T.E.R from your keyboard..");
+        }
+        
+        
+        
+    }
+    
+     public static void main(String[] args) {
+        FabulousMessage fbm =new FabulousMessage();
+        
+     }
+    
+    
+}
